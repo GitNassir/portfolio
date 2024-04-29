@@ -13,8 +13,8 @@ export const educations = [
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Højer handelseksamen",
+    duration: "2011 - 2014",
+    institution: "Rybners Gymnasium",
   }
 ]
