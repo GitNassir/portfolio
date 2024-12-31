@@ -147,6 +147,9 @@ function ContactForm() {
 
 export default ContactForm;
 */
+
+"use client";
+// @flow strict
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';

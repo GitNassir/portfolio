@@ -2,12 +2,17 @@
 
 import { useEffect } from "react";
 
-const GlowCard = ({ children, identifier }) => {
+const GlowCard = ({ children, identifier }) => {  
   useEffect(() => {
-    if (typeof window === "undefined") return; 
+    // Refactor this code to avoid using `document` in a server-side context  
+
+    if (typeof window === "undefined" || typeof document === "undefined") return;
 
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+
+    if (!CONTAINER || !CARDS.length) return; // Ensure elements exist
+
 
     const CONFIG = {
       proximity: 40,

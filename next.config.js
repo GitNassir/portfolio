@@ -9,4 +9,7 @@ module.exports = {
     unoptimized: true,
   },
   output: 'export',
+  experimental: {
+    missingSuspenseWithCSRBailout: false, // Temporary fix for SSR issues
+  },
 };
