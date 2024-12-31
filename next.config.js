@@ -9,6 +9,7 @@ module.exports = {
     unoptimized: true,
   },
   output: 'export',
+  trailingSlash: true, // Sikrer korrekt sti for statiske filer
   experimental: {
     missingSuspenseWithCSRBailout: false, // Temporary fix for SSR issues
   },
