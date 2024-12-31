@@ -1,5 +1,7 @@
+"use client"
+
 import { useEffect, useRef } from "react";
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 
 const AnimationLottie = ({ animationPath }) => {
   const containerRef = useRef(null);
